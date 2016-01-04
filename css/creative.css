@@ -14,6 +14,8 @@ body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
+
+
 hr {
     max-width: 50px;
     border-color: #f05f40;
@@ -76,7 +78,10 @@ aside {
     padding: 0;
 }
 
-
+.navbar-toggle {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
 .navbar-default .top-logo {
     content:url("../img/logo_light_bg.png");
     max-width: 150px;
@@ -224,7 +229,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/room.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -244,17 +249,19 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     /*text-transform: uppercase;*/
     font-weight: 700;
+    
 }
 
 header .header-content .header-content-inner hr {
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
-    font-size: 24px;
-    font-weight: 300;
-    color: rgba(255,255,255,.7);
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(255,255,255,.9);
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 @media(min-width:768px) {
@@ -281,7 +288,7 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 26px;
+        font-size: 28px;
     }
 }
 
