@@ -37,6 +37,10 @@ section.about {
 }
 
 @media(min-width:768px) {
+    .navbar-default {
+        /*border-color: rgba(255,255,255,0);*/
+        /*border-width: 2px;*/
+    }
     .navbar-default .top-logo {
         content:url("../img/logo_dark_bg.png");
         -webkit-transition: all .35s;
@@ -57,15 +61,16 @@ section.about {
 }
 
 header {
-    background-image: url(../img/room.jpg);
+    background-image: url(../img/room3.jpg);
 }
 
 header .header-content .header-content-inner hr {
     margin: 20px auto;
+    max-width: 340px!important;
 }
 
 header .header-content .header-content-inner p {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 600;
     color: rgba(255,255,255,.9);
     font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -74,6 +79,6 @@ header .header-content .header-content-inner p {
 @media(min-width:768px) {
 
     header .header-content .header-content-inner p {
-        font-size: 28px;
+        font-size: 38px;
     }
 }
