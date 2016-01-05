@@ -17,4 +17,19 @@ $(document).ready(function(){
 
     /* auto-open #firstlink on page load */
     $("#firstlink").venobox().trigger('click');
+    
+    setTimeout(function() {
+        $('.animate-fast-down').toggleClass('hidden-elem');
+        $('.animate-fast-down').addClass('animated slideInDown');
+    }, 150);
+    
+    setTimeout(function() {
+        $('.animate-fast-up').toggleClass('hidden-elem');
+        $('.animate-fast-up').addClass('animated slideInUp');
+    }, 150);
+    
+    setTimeout(function() {
+        $('.animate-slow').toggleClass('hidden-elem');
+        $('.animate-slow').addClass('animated fadeIn');
+    }, 1500);
 });

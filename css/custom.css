@@ -70,7 +70,11 @@ Navbar Large Styles
 Header Styles
 */
 header {
-    background-image: url(../img/room3.jpg);
+    background-image: url(../img/room4.jpg);
+}
+
+header h1 {
+    color: rgba(255,255,255,0.9);
 }
 
 header .header-content .header-content-inner hr {
@@ -92,4 +96,8 @@ Header Large Styles
     header .header-content .header-content-inner p {
         font-size: 38px;
     }
+}
+
+.hidden-elem {
+    visibility: hidden;
 }
