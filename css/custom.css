@@ -101,3 +101,17 @@ Header Large Styles
 .hidden-elem {
     visibility: hidden;
 }
+
+.outer-box-pic {
+    padding: 30px;
+    background-image: url("../img/borders/cheap_diagonal_fabric.png");
+}
+
+.outer-box {
+   padding: 30px;
+}
+
+.inner-box {
+    height: 500px;
+    background-color: white;
+}
