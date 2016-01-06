@@ -106,18 +106,41 @@ Header Large Styles
     visibility: hidden;
 }
 
-.outer-box-text {
-    padding: 30px;
-    background-image: url("../img/borders/cheap_diagonal_fabric.png");
+.outer-box-text-1 {
+    /*background-image: url("../img/borders/cheap_diagonal_fabric.png");*/
+    border-bottom-color: rgba(239,95,64,0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 25px;
 }
 
-.outer-box-img {
-   height: 460px;
+.outer-box-img-1 {
+   height: 485px;
    overflow: hidden;
+    border-bottom-color: rgba(239,95,64,0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 25px;
+}
+
+.outer-box-text-2 {
+    /*background-image: url("../img/borders/cheap_diagonal_fabric.png");*/
+    border-right-color: rgba(239,95,64,0.4);
+    border-right-style: solid;
+    border-right-width: 25px;
+    border-bottom-color: rgba(239,95,64,0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 25px;
+}
+
+.outer-box-img-2 {
+   height: 485px;
+   overflow: hidden;
+    border-bottom-color: rgba(239,95,64,0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 25px;
 }
 
 .inner-box-text {
-    height: 400px;
+    height: 460px;
     background-color: white;
     text-align: center;
     padding: 30px 75px;
