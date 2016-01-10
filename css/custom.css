@@ -130,6 +130,17 @@ Header Large Styles
     padding-right: 25px;
 }
 
+.info-three-img {
+    background-image: url("../img/borders/small_steps.png");
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+.info-three-text {
+    background-image: url("../img/borders/small_steps.png");
+    padding-left: 25px;
+}
+
 @media(min-width:768px) {
     .info-one-img {
         background-image: url("../img/borders/small_steps.png");
@@ -156,21 +167,39 @@ Header Large Styles
         padding-bottom: 25px;
         padding-right: 25px;
     }
+    
+    .info-three-img {
+        background-image: url("../img/borders/small_steps.png");
+        padding-left: 0px;
+        padding-bottom: 25px;
+    }
+
+    .info-three-text {
+        background-image: url("../img/borders/small_steps.png");
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .outer-box-img-1 {
     background-color: white;
-    height: 400px;
+    height: 370px;
     position: relative;
     overflow: hidden;
 }
 
 .outer-box-img-2 {
     background-color: white;
-    height: 400px;
+    height: 370px;
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.outer-box-img-3 {
+    background-color: white;
+    height: 370px;
+    overflow: hidden;
 }
 
 .spring-img {
@@ -181,14 +210,14 @@ Header Large Styles
 }
 
 .inner-box-text {
-    height: 400px;
+    height: 370px;
     background-color: white;
     text-align: center;
-    padding: 25px 50px;
+    padding: 5px 50px;
 }
 
 .inner-box-text p {
-    line-height: 1.8;
+    line-height: 1.5;
     font-size: large;
 }
 
@@ -200,6 +229,10 @@ Header Large Styles
     .outer-box-img-2 {
         height: 325px;
     }
+    
+    .outer-box-img-3 {
+        height: 325px;
+    }
 
     .inner-box-text {
         height: 325px;
@@ -207,6 +240,7 @@ Header Large Styles
     }
 
     .inner-box-text p {
+            line-height: 1.8;
         font-size: small;
     }
 }
@@ -217,6 +251,10 @@ Header Large Styles
     }
 
     .outer-box-img-2 {
+        height: 375px;
+    }
+    
+    .outer-box-img-3 {
         height: 375px;
     }
 
@@ -238,6 +276,10 @@ Header Large Styles
     .outer-box-img-2 {
         height: 500px;
     }
+    
+    .outer-box-img-3 {
+        height: 500px;
+    }
 
     .inner-box-text {
         height: 500px;
@@ -255,6 +297,10 @@ Header Large Styles
     }
 
     .outer-box-img-2 {
+        height: 650px;
+    }
+    
+    .outer-box-img-3 {
         height: 650px;
     }
 
@@ -313,4 +359,10 @@ Header Large Styles
 
 .signup-box p {
     font-size: small;
+}
+
+.full-side {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
 }
