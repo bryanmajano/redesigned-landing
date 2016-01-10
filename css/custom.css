@@ -107,48 +107,165 @@ Header Large Styles
     visibility: hidden;
 }
 
-.outer-box-text-1 {
-    /*background-image: url("../img/borders/cheap_diagonal_fabric.png");*/
-    border-bottom-color: rgba(239,95,64,0.4);
-    border-bottom-style: solid;
-    border-bottom-width: 25px;
+.info-one-img {
+    background-image: url("../img/borders/small_steps.png");
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+.info-one-text {
+    background-image: url("../img/borders/small_steps.png");
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.info-two-img {
+    background-image: url("../img/borders/small_steps.png");
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.info-two-text {
+    background-image: url("../img/borders/small_steps.png");
+    padding-right: 25px;
+}
+
+@media(min-width:768px) {
+    .info-one-img {
+        background-image: url("../img/borders/small_steps.png");
+        padding-top: 25px;
+        padding-left: 0px;
+        padding-bottom: 25px;
+    }
+
+    .info-one-text {
+        background-image: url("../img/borders/small_steps.png");
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+    }
+
+    .info-two-img {
+        background-image: url("../img/borders/small_steps.png");
+        padding-bottom: 25px;
+        padding-right: 0px;
+    }
+
+    .info-two-text {
+        background-image: url("../img/borders/small_steps.png");
+        padding-bottom: 25px;
+        padding-right: 25px;
+    }
 }
 
 .outer-box-img-1 {
-   height: 485px;
-   overflow: hidden;
-    border-bottom-color: rgba(239,95,64,0.4);
-    border-bottom-style: solid;
-    border-bottom-width: 25px;
-}
-
-.outer-box-text-2 {
-    /*background-image: url("../img/borders/cheap_diagonal_fabric.png");*/
-    border-right-color: rgba(239,95,64,0.4);
-    border-right-style: solid;
-    border-right-width: 25px;
-    border-bottom-color: rgba(239,95,64,0.4);
-    border-bottom-style: solid;
-    border-bottom-width: 25px;
+    background-color: white;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
 }
 
 .outer-box-img-2 {
-   height: 485px;
-   overflow: hidden;
-    border-bottom-color: rgba(239,95,64,0.4);
-    border-bottom-style: solid;
-    border-bottom-width: 25px;
+    background-color: white;
+    height: 400px;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.spring-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
 }
 
 .inner-box-text {
-    height: 460px;
+    height: 400px;
     background-color: white;
     text-align: center;
-    padding: 30px 75px;
+    padding: 25px 50px;
 }
 
-.inner-box-img {
-    
+.inner-box-text p {
+    line-height: 1.8;
+    font-size: large;
+}
+
+@media(min-width:768px) {
+    .outer-box-img-1 {
+        height: 325px;
+    }
+
+    .outer-box-img-2 {
+        height: 325px;
+    }
+
+    .inner-box-text {
+        height: 325px;
+        padding: 25px 25px;
+    }
+
+    .inner-box-text p {
+        font-size: small;
+    }
+}
+
+@media(min-width:900px) {
+    .outer-box-img-1 {
+        height: 375px;
+    }
+
+    .outer-box-img-2 {
+        height: 375px;
+    }
+
+    .inner-box-text {
+        height: 375px;
+        padding: 25px 50px;
+    }
+
+    .inner-box-text p {
+        font-size: medium;
+    }
+}
+
+@media(min-width:1200px) {
+    .outer-box-img-1 {
+        height: 500px;
+    }
+
+    .outer-box-img-2 {
+        height: 500px;
+    }
+
+    .inner-box-text {
+        height: 500px;
+        padding: 50px 75px;
+    }
+
+    .inner-box-text p {
+        font-size: large;
+    }
+}
+
+@media(min-width:1600px) {
+    .outer-box-img-1 {
+        height: 650px;
+    }
+
+    .outer-box-img-2 {
+        height: 650px;
+    }
+
+    .inner-box-text {
+        height: 650px;
+        padding: 125px 100px;
+    }
+
+    .inner-box-text p {
+        font-size: x-large;
+    }
 }
 
 .form-email {
@@ -169,17 +286,15 @@ Header Large Styles
 }
 
 .info-content {
-    margin: 0 auto;
+    color: rgb(240,95,64);
+    margin-bottom: 40px;
 }
 
 .inner-box-text hr {
-    max-width: 350px;
-    margin-top: 35px;
+    /*max-width: 350px;*/
+    max-width: 50px;
+    /*    margin-top: 35px;*/
     margin-bottom: 35px;
-}
-
-.inner-box-text p {
-    line-height: 1.8;
 }
 
 .btn-xl {
