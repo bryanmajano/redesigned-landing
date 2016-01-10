@@ -102,7 +102,7 @@ $(window).load(function () {
 });
 
 $('#signupButton').on('click', function (e) {
-    e.preventDefault();
+//    e.preventDefault();
     $("#signupAlert").show();
 
 })

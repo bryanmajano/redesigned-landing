@@ -1,0 +1,163 @@
+section.about {
+    padding: 50px 0;
+}
+
+body {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+} 
+
+/*
+Start Navbar Styles
+*/
+.navbar-toggle {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.navbar-default .top-logo {
+    content:url("../img/logo_light_bg_orange.png");
+    max-width: 200px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+}
+
+.navbar-brand {
+    height: 70px;
+    padding-top: 2px!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    padding-bottom: 2px!important;
+}
+
+.navbar-header {
+    height:70px;
+}
+
+.navbar-default {
+    min-height:70px;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+/*
+Navbar Large Styles
+*/
+@media(min-width:1px) {
+    .navbar-default {
+        /*border-color: rgba(255,255,255,0);*/
+        /*border-width: 2px;*/
+    }
+    .navbar-default .top-logo {
+        content:url("../img/logo_dark_bg_orange.png");
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+    }
+
+    .navbar-default.affix .top-logo {
+        content:url("../img/logo_light_bg_orange.png");
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+}
+
+/*
+Header Styles
+*/
+header {
+    background-image: url(../img/room5.jpg);
+}
+
+header h1 {
+    color: rgba(255,255,255,0.9);
+}
+
+header .header-content .header-content-inner hr {
+    margin: 20px auto;
+    max-width: 340px!important;
+}
+
+header .header-content .header-content-inner p {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgba(255,255,255,.9);
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    margin-bottom: 20px;
+}
+
+/*
+Header Large Styles
+*/
+@media(min-width:1px) {
+    header .header-content .header-content-inner p {
+        font-size: 38px;
+    }
+}
+
+.hidden-elem {
+    visibility: hidden;
+}
+
+.form-email {
+    text-align: center;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.form-email:focus {
+    border-style: solid;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.form-btn {
+    padding: 7px 30px;
+}
+
+.info-content {
+    color: rgb(240,95,64);
+    margin-bottom: 40px;
+}
+
+.inner-box-text hr {
+    /*max-width: 350px;*/
+    max-width: 50px;
+    /*    margin-top: 35px;*/
+    margin-bottom: 35px;
+}
+
+.btn-xl {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.signup-box {
+    background-color: rgba(240, 95, 64, 0.9);
+    max-width: 40%;
+    height: 250px;
+    margin: 50px auto;
+    padding: 1px 10px;
+}
+
+.signup-box p {
+    font-size: small;
+}
+
+.full-side {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+}
+
+#signupAlert {
+    margin-top: 20px!important;
+}
