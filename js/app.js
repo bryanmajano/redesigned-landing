@@ -80,23 +80,29 @@ $(window).load(function () {
         }, 7);
     }
 
-var editPic = true;
+    var editPic = true;
 
-var container = $("#diff-container");
-var target = container.offset().top + 200;
-timeout = null;
+    var container = $("#diff-container");
+    var target = container.offset().top + 200;
+    timeout = null;
 
-$(window).scroll(function () {
-    if (!timeout) {
-        timeout = setTimeout(function () {
-            console.log('scroll');
-            clearTimeout(timeout);
-            timeout = null;
-            if ($(window).scrollTop() + $(window).height() >= target && editPic) {
-                editPic = false;
-                transitionSlider();
-            }
-        }, 250);
-    }
+    $(window).scroll(function () {
+        if (!timeout) {
+            timeout = setTimeout(function () {
+                console.log('scroll');
+                clearTimeout(timeout);
+                timeout = null;
+                if ($(window).scrollTop() + $(window).height() >= target && editPic) {
+                    editPic = false;
+                    transitionSlider();
+                }
+            }, 250);
+        }
+    });
 });
-});
+
+$('#signupButton').on('click', function (e) {
+    e.preventDefault();
+    $("#signupAlert").show();
+
+})

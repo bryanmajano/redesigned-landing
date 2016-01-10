@@ -14,7 +14,7 @@ Start Navbar Styles
     margin-bottom: 18px;
 }
 .navbar-default .top-logo {
-    content:url("../img/logo_light_bg.png");
+    content:url("../img/logo_light_bg_orange.png");
     max-width: 200px;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -52,13 +52,13 @@ Navbar Large Styles
         /*border-width: 2px;*/
     }
     .navbar-default .top-logo {
-        content:url("../img/logo_dark_bg.png");
+        content:url("../img/logo_dark_bg_orange.png");
         -webkit-transition: all .35s;
         -moz-transition: all .35s;
     }
 
     .navbar-default.affix .top-logo {
-        content:url("../img/logo_light_bg.png");
+        content:url("../img/logo_light_bg_orange.png");
         -webkit-transition: all .35s;
         -moz-transition: all .35s;
     }
@@ -365,4 +365,8 @@ Header Large Styles
     margin-left: auto;
     margin-right: auto;
     width: 768px;
+}
+
+#signupAlert {
+    margin-top: 20px!important;
 }
