@@ -107,99 +107,66 @@ Header Large Styles
     visibility: hidden;
 }
 
-.info-one-img {
-    background-image: url("../img/borders/small_steps.png");
-    padding-left: 25px;
-    padding-bottom: 25px;
-}
-
-.info-one-text {
-    background-image: url("../img/borders/small_steps.png");
+.info-text-top {
     padding-top: 25px;
-    padding-left: 25px;
 }
 
-.info-two-img {
-    background-image: url("../img/borders/small_steps.png");
-    padding-right: 25px;
-    padding-bottom: 25px;
-}
-
-.info-two-text {
-    background-image: url("../img/borders/small_steps.png");
-    padding-right: 25px;
-}
-
-.info-three-img {
+.info-img-odd {
     background-image: url("../img/borders/small_steps.png");
     padding-left: 25px;
     padding-bottom: 25px;
 }
 
-.info-three-text {
+.info-text-odd {
     background-image: url("../img/borders/small_steps.png");
     padding-left: 25px;
+}
+
+.info-img-even {
+    background-image: url("../img/borders/small_steps.png");
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.info-text-even {
+    background-image: url("../img/borders/small_steps.png");
+    padding-right: 25px;
 }
 
 @media(min-width:768px) {
-    .info-one-img {
-        background-image: url("../img/borders/small_steps.png");
+    .info-img-top {
         padding-top: 25px;
+    }
+    
+    .info-img-odd {
+        /*padding-top: 25px;*/
         padding-left: 0px;
         padding-bottom: 25px;
     }
 
-    .info-one-text {
-        background-image: url("../img/borders/small_steps.png");
-        padding-top: 25px;
+    .info-text-odd {
         padding-bottom: 25px;
         padding-left: 25px;
     }
 
-    .info-two-img {
-        background-image: url("../img/borders/small_steps.png");
-        padding-bottom: 25px;
+    .info-img-even {
         padding-right: 0px;
     }
 
-    .info-two-text {
-        background-image: url("../img/borders/small_steps.png");
-        padding-bottom: 25px;
-        padding-right: 25px;
-    }
-    
-    .info-three-img {
-        background-image: url("../img/borders/small_steps.png");
-        padding-left: 0px;
-        padding-bottom: 25px;
-    }
-
-    .info-three-text {
-        background-image: url("../img/borders/small_steps.png");
-        padding-left: 25px;
+    .info-text-even {
         padding-bottom: 25px;
     }
 }
 
-.outer-box-img-1 {
+.info-box {
     background-color: white;
     height: 370px;
-    position: relative;
     overflow: hidden;
 }
 
-.outer-box-img-2 {
-    background-color: white;
-    height: 370px;
-    overflow: hidden;
+.spring-box {
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.outer-box-img-3 {
-    background-color: white;
-    height: 370px;
-    overflow: hidden;
 }
 
 .spring-img {
@@ -210,8 +177,6 @@ Header Large Styles
 }
 
 .inner-box-text {
-    height: 370px;
-    background-color: white;
     text-align: center;
     padding: 5px 50px;
 }
@@ -222,20 +187,11 @@ Header Large Styles
 }
 
 @media(min-width:768px) {
-    .outer-box-img-1 {
-        height: 325px;
-    }
-
-    .outer-box-img-2 {
+    .info-box {
         height: 325px;
     }
     
-    .outer-box-img-3 {
-        height: 325px;
-    }
-
     .inner-box-text {
-        height: 325px;
         padding: 25px 25px;
     }
 
@@ -246,21 +202,12 @@ Header Large Styles
 }
 
 @media(min-width:900px) {
-    .outer-box-img-1 {
-        height: 375px;
-    }
-
-    .outer-box-img-2 {
-        height: 375px;
-    }
-    
-    .outer-box-img-3 {
+    .info-box {
         height: 375px;
     }
 
     .inner-box-text {
         height: 375px;
-        padding: 25px 50px;
     }
 
     .inner-box-text p {
@@ -269,20 +216,11 @@ Header Large Styles
 }
 
 @media(min-width:1200px) {
-    .outer-box-img-1 {
-        height: 500px;
-    }
-
-    .outer-box-img-2 {
-        height: 500px;
-    }
-    
-    .outer-box-img-3 {
+    .info-box {
         height: 500px;
     }
 
     .inner-box-text {
-        height: 500px;
         padding: 50px 75px;
     }
 
@@ -292,20 +230,11 @@ Header Large Styles
 }
 
 @media(min-width:1600px) {
-    .outer-box-img-1 {
-        height: 650px;
-    }
-
-    .outer-box-img-2 {
-        height: 650px;
-    }
-    
-    .outer-box-img-3 {
+    .info-box {
         height: 650px;
     }
 
     .inner-box-text {
-        height: 650px;
         padding: 125px 100px;
     }
 
@@ -318,7 +247,6 @@ Header Large Styles
     text-align: center;
     border-radius: 20px;
     border-style: none;
-    margin-left: 20px;
 }
 
 .form-email:focus {
@@ -328,7 +256,6 @@ Header Large Styles
 
 .form-btn {
     padding: 7px 30px;
-    margin-left: 35px;
 }
 
 .info-content {
