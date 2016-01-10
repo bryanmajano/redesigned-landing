@@ -1,7 +1,7 @@
 (function($){
 
   $.fn.twentytwenty = function(options) {
-    var options = $.extend({default_offset_pct: 0.9, orientation: 'horizontal'}, options);
+    var options = $.extend({default_offset_pct: 0.5, orientation: 'horizontal'}, options);
     return this.each(function() {
 
       var sliderPct = options.default_offset_pct;
@@ -57,10 +57,8 @@
       $(window).on("resize.twentytwenty", function(e) {
             adjustSlider(sliderPct);
       });
-      
-      $(window).move = adjustSlider(sliderPct);
-      
-      $.fn.move = adjustSlider(sliderPct);
+
+      $.fn.move = adjustSlider;
       var offsetX = 0;
       var imgWidth = 0;
       

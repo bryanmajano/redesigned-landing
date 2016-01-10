@@ -36,50 +36,21 @@ $(document).ready(function () {
 
 $(window).load(function () {
     var container = $("#diff-container");
-    container.twentytwenty();
+    var result = container.twentytwenty({default_offset_pct: 0.9});
 
-    var beforeImg = container.find("img:first");
-    var slider = container.find(".twentytwenty-handle");
-    var sliderOrientation = 'horizontal';
-
-    var calcOffset = function (dimensionPct) {
-        var w = beforeImg.width();
-        var h = beforeImg.height();
-        return {
-            w: w + "px",
-            h: h + "px",
-            cw: (dimensionPct * w) + "px",
-            ch: (dimensionPct * h) + "px"
-        };
-    };
-
-    var adjustContainer = function (offset) {
-        if (sliderOrientation === 'vertical') {
-            beforeImg.css("clip", "rect(0," + offset.w + "," + offset.ch + ",0)");
-        } else {
-            beforeImg.css("clip", "rect(0," + offset.cw + "," + offset.h + ",0)");
-        }
-        container.css("height", offset.h);
-    };
-
-    var adjustSlider = function (pct) {
-        var offset = calcOffset(pct);
-        slider.css((sliderOrientation === "vertical") ? "top" : "left", (sliderOrientation === "vertical") ? offset.ch : offset.cw);
-        adjustContainer(offset);
-    }
-
+    console.log(result);
     current = 0.9;
     diff = 0.005;
     var transitionSlider = function () {
         setTimeout(function () {
             current = current - diff;
-            adjustSlider(current);
+            container.move(current);
             if (current > 0.3) {
                 transitionSlider();
             }
         }, 7);
     }
-
+    
     var editPic = true;
 
     var container = $("#diff-container");
@@ -100,6 +71,8 @@ $(window).load(function () {
         }
     });
 });
+
+$(window).scroll(function(){});
 
 $('#signupButton').on('click', function (e) {
 //    e.preventDefault();

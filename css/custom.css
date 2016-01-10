@@ -297,3 +297,7 @@ Header Large Styles
 #signupAlert {
     margin-top: 20px!important;
 }
+
+.twentytwenty-overlay {
+    visibility: hidden;
+}
