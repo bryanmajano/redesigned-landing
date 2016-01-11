@@ -57,31 +57,35 @@
         <header>
             <div class="header-content">
                 <div class="header-content-inner">
-                    <h1 class="hidden-elem animate-fast-down">Coming Soon</h1>
+                    <h1>Coming Soon</h1>
                     <hr>
-                    <h3 class="hidden-elem animate-fast-up">We are currently working on a new website but should be up and running soon! Enter your email address to stay up to date!</p>
-                 <form action="http://sleepovation.us12.list-manage1.com/subscribe/post" method="post" class="form" role="form">
-                     <input type="hidden" name="u" value="da653457674b57a5a7e27eeaf">
-<input type="hidden" name="id" value="371dec1069">       
-                     <div class="form-group">
-                                <div class="col-sm-6 col-sm-offset-3 form-group">
-                                    <input name="MERGE0" id="mce-EMAIL" type="email" class="form-control form-email" placeholder="Enter your email address">
-                                </div>
+                    <h3>We are currently working on a new website but should be up and running soon! Enter your email address to stay up to date!</h3>
+                    <form action="includes/signup.php" method="post" class="form" role="form">
+
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-3 form-group">
+                                <input name="email" type="email" class="form-control form-email" placeholder="Enter your email address">
                             </div>
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <button type="submit" class="form-btn btn btn-default" id="signupButton">Submit</button>
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button type="submit" class="form-btn btn btn-default" id="signupButton">Submit</button>
                             </div>
-                            
-                            
-                        </form>    
+                        </div>
+
+
+                    </form>   <br><br>
+                    <br><br>
+                    <div class="alert alert-success" hidden role="alert" id="signupAlert">  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Thanks for signing up. You will hear from us soon!</div>
+            
                 </div>
+
             </div>
+
         </header>
 
 
-        
+
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>

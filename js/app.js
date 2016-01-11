@@ -32,6 +32,17 @@ $(document).ready(function () {
         $('.animate-slow').toggleClass('hidden-elem');
         $('.animate-slow').addClass('animated fadeIn');
     }, 1500);
+    
+    var getQueryString = function ( field, url ) {
+        var href = url ? url : window.location.href;
+        var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+        var string = reg.exec(href);
+        return string ? string[1] : null;
+    };
+    
+    if (getQueryString('success', window.location.href) == 1) {
+        $("#signupAlert").show();
+    }
 });
 
 $(window).load(function () {
@@ -73,9 +84,3 @@ $(window).load(function () {
 });
 
 $(window).scroll(function(){});
-
-$('#signupButton').on('click', function (e) {
-//    e.preventDefault();
-    $("#signupAlert").show();
-
-})
