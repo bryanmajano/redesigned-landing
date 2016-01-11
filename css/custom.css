@@ -160,13 +160,13 @@ Header Large Styles
 
 .info-box {
     background-color: white;
-    height: 370px;
+    height: 400px;
     overflow: hidden;
 }
 
 .spring-box {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .spring-img {
@@ -184,6 +184,41 @@ Header Large Styles
 .inner-box-text p {
     line-height: 1.5;
     font-size: large;
+}
+
+.inner-box-text hr {
+    /*max-width: 350px;*/
+    max-width: 50px;
+    /*    margin-top: 35px;*/
+    margin-bottom: 35px;
+}
+
+.info-content {
+    color: rgb(240,95,64);
+    margin-bottom: 40px;
+}
+
+@media(max-width:480px) {
+    .info-box {
+        height: 275px;
+    }
+    
+    .inner-box-text {
+        padding: 5px 25px;
+    }
+
+    .inner-box-text p {
+            line-height: 1.8;
+        font-size: small;
+    }
+    
+.info-content {
+    margin-bottom: 20px;
+}
+    .inner-box-text hr {
+
+    margin-bottom: 20px;
+}
 }
 
 @media(min-width:768px) {
@@ -256,18 +291,6 @@ Header Large Styles
 
 .form-btn {
     padding: 7px 30px;
-}
-
-.info-content {
-    color: rgb(240,95,64);
-    margin-bottom: 40px;
-}
-
-.inner-box-text hr {
-    /*max-width: 350px;*/
-    max-width: 50px;
-    /*    margin-top: 35px;*/
-    margin-bottom: 35px;
 }
 
 .btn-xl {
