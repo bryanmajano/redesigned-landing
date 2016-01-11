@@ -268,10 +268,6 @@ Header Large Styles
     .inner-box-text {
         padding: 125px 100px;
     }
-
-    .inner-box-text p {
-        font-size: x-large;
-    }
 }
 
 .form-email {
