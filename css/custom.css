@@ -160,7 +160,7 @@ Header Large Styles
 
 .info-box {
     background-color: white;
-    height: 400px;
+    height: 370px;
     overflow: hidden;
 }
 
@@ -223,11 +223,11 @@ Header Large Styles
 
 @media(min-width:768px) {
     .info-box {
-        height: 325px;
+        height: 305px;
     }
     
     .inner-box-text {
-        padding: 25px 25px;
+        padding: 10px 25px;
     }
 
     .inner-box-text p {
@@ -236,12 +236,8 @@ Header Large Styles
     }
 }
 
-@media(min-width:900px) {
+@media(min-width:920px) {
     .info-box {
-        height: 375px;
-    }
-
-    .inner-box-text {
         height: 375px;
     }
 
@@ -252,7 +248,7 @@ Header Large Styles
 
 @media(min-width:1200px) {
     .info-box {
-        height: 500px;
+        height: 480px;
     }
 
     .inner-box-text {
@@ -266,7 +262,7 @@ Header Large Styles
 
 @media(min-width:1600px) {
     .info-box {
-        height: 650px;
+        height: 640px;
     }
 
     .inner-box-text {
