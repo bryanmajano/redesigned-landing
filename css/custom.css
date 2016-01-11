@@ -77,6 +77,17 @@ header {
     background-image: url(../img/room6.jpg);
 }
 
+.info-section {
+    background-image: url(../img/info/front-view.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dark-bg {
+    background-color: rgba(0,0,0,.2);
+}
+
 header h1 {
     color: rgba(255,255,255,0.9);
 }
