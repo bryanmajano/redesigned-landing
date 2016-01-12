@@ -14,7 +14,7 @@ Start Navbar Styles
     margin-bottom: 18px;
 }
 .navbar-default .top-logo {
-    content:url("../img/logo_light_bg_orange.png");
+    content:url("../img/logo_light_bg.png");
     max-width: 200px;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -52,13 +52,13 @@ Navbar Large Styles
         /*border-width: 2px;*/
     }
     .navbar-default .top-logo {
-        content:url("../img/logo_dark_bg_orange.png");
+        content:url("../img/logo_dark_bg.png");
         -webkit-transition: all .35s;
         -moz-transition: all .35s;
     }
 
     .navbar-default.affix .top-logo {
-        content:url("../img/logo_light_bg_orange.png");
+        content:url("../img/logo_light_bg.png");
         -webkit-transition: all .35s;
         -moz-transition: all .35s;
     }
@@ -127,22 +127,26 @@ Header Large Styles
     background-image: url("../img/borders/small_steps.png");
     padding-left: 25px;
     padding-bottom: 25px;
+    padding-right: 25px;
 }
 
 .info-text-odd {
     background-image: url("../img/borders/small_steps.png");
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 .info-img-even {
     background-image: url("../img/borders/small_steps.png");
     padding-right: 25px;
     padding-bottom: 25px;
+    padding-left: 25px;
 }
 
 .info-text-even {
     background-image: url("../img/borders/small_steps.png");
     padding-right: 25px;
+    padding-left: 25px;
 }
 
 @media(min-width:768px) {
@@ -154,19 +158,23 @@ Header Large Styles
         /*padding-top: 25px;*/
         padding-left: 0px;
         padding-bottom: 25px;
+        padding-right: 0px;
     }
 
     .info-text-odd {
         padding-bottom: 25px;
         padding-left: 25px;
+        padding-right: 0px;
     }
 
     .info-img-even {
         padding-right: 0px;
+        padding-left: 0px;
     }
 
     .info-text-even {
         padding-bottom: 25px;
+        padding-left: 0px;
     }
 }
 
@@ -322,6 +330,10 @@ Header Large Styles
 }
 
 #signupAlert {
+    margin-top: 20px!important;
+}
+
+#signupWarning {
     margin-top: 20px!important;
 }
 

@@ -43,6 +43,9 @@ $(document).ready(function () {
     if (getQueryString('success', window.location.href) == 1) {
         $("#signupAlert").show();
     }
+    else if (getQueryString('success', window.location.href) == 0) {
+        $("#signupWarning").show();
+    }
 });
 
 $(window).load(function () {

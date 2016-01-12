@@ -14,13 +14,16 @@ if ($conn->connect_error) {
 
 $email = $_POST['email'];
 
-$stmt = $conn->prepare("INSERT INTO members (email) VALUES (?)");
-$stmt->bind_param("s", $email);
-$stmt->execute();
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $stmt = $conn->prepare("INSERT INTO members (email) VALUES (?)");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
 
-$stmt->close();
-$conn->close();
-
-header('Location: ../index.html?success=1');
-
+    $stmt->close();
+    $conn->close();
+    header('Location: ../index.html?success=1');
+} else {
+    $conn->close();
+    header('Location: ../index.html?success=0');
+}
 ?>
