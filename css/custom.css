@@ -369,3 +369,7 @@ section#contact {
 .copyright p {
     font-size: small;
 }
+
+#signup p {
+    margin-bottom: 0px;
+}
