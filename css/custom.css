@@ -362,3 +362,10 @@ Header Large Styles
     padding-left: 50px;
     padding-right: 50px;
 }
+
+section#contact {
+    padding-bottom: 50px;
+}
+.copyright p {
+    font-size: small;
+}
