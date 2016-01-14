@@ -379,7 +379,7 @@
     function loadYoutube(autoplay){
       var pezzi = dest.split('/');
       var videoid = pezzi[pezzi.length-1];
-      var stringAutoplay = autoplay ? "?autoplay=1&controls=0" : "";
+      var stringAutoplay = autoplay ? "?autoplay=1&rel=0" : "";
       content.html('<iframe class="venoframe" webkitallowfullscreen mozallowfullscreen allowfullscreen src="//www.youtube.com/embed/'+videoid+stringAutoplay+'"></iframe>');
       updateoverlay();
     }
