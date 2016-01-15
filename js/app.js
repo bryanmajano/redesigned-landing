@@ -93,6 +93,7 @@ $(document).on('submit', '#reg-form', function() {
     if (email) {
         $.post('includes/signup.php', $(this).serialize(), function(data) {
             $("#signupAlert").show();
+            $('#email').val("");
         });
     } else {
         $("#signupWarning").show();
