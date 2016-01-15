@@ -87,3 +87,16 @@ $(window).load(function () {
 });
 
 $(window).scroll(function(){});
+
+$(document).on('submit', '#reg-form', function() {  
+    var email = $('#email').val();
+    if (email) {
+        $.post('includes/signup.php', $(this).serialize(), function(data) {
+            $("#signupAlert").show();
+        });
+    } else {
+        $("#signupWarning").show();
+    }
+    return false;
+  
+ });
