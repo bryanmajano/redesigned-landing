@@ -33,6 +33,15 @@ $(document).ready(function () {
         $('.animate-slow').addClass('animated fadeIn');
     }, 1500);
     
+    setTimeout(function () {
+//        $('.animate-arrow-up').toggleClass('hidden-elem');
+//        $('.animate-arrow-up').addClass('animated slideInUp');
+    }, 1500);
+    
+//    $('.animate-arrow-up').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationEnd animationend', 
+//        $('.animate-arrow-up').removeClass('slideInUp'));
+        
+    
     var getQueryString = function ( field, url ) {
         var href = url ? url : window.location.href;
         var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );

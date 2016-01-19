@@ -373,3 +373,25 @@ section#contact {
 #signup p {
     margin-bottom: 10px;
 }
+
+.bottom {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+@media(max-width: 768px) {
+    .bottom {
+        visibility: hidden;
+    }
+}
+
+.scroll-btn, .scroll-btn:focus {
+    color: white;
+}
+
+.scroll-btn:hover {
+    color:#d7d7d7
+}
