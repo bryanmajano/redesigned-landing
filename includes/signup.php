@@ -27,7 +27,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $conn->close();
 
     $message = new Mail_mime();
-    $message->setTXTBody("Thanks for signing up.\n\nYou are one step closer to a better night's sleep. We're launching on Kickstarter soon and you'll be the first to know. In the meantime, help us spread the word about what is to come by sharing the links to our website and informational video below.");
+    $message->setTXTBody("Thanks for signing up.\n\nYou are one step closer to a better night's sleep. We're getting ready to launch soon and you'll be the first to know. In the meantime, help us spread the word about what is to come by sharing the links to our website and informational video below.");
     $message->setHTMLBody("
 <!doctype html>
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml' xmlns:o='urn:schemas-microsoft-com:office:office'>
@@ -619,7 +619,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
                         
                         <td valign='top' class='mcnTextContent' style='padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;'>
                         
-                            <div style='text-align: center;'>You are one step closer to a better night's sleep. We're launching on Kickstarter soon and you'll be the first to know. In the meantime, help us spread the word about what is to come by sharing the links to our website and informational video below.</div>
+                            <div style='text-align: center;'>You are one step closer to a better night's sleep. We're getting ready to launch soon and you'll be the first to know. In the meantime, help us spread the word about what is to come by sharing the links to our website and informational video below.</div>
 
                         </td>
                     </tr>
@@ -696,7 +696,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
                                                                         <tbody><tr>
                                                                             
                                                                                 <td align='center' valign='middle' width='24' class='mcnFollowIconContent'>
-                                                                                    <a href='https://youtu.be/PivYKCiwa5k' target='_blank'><img src='http://cdn-images.mailchimp.com/icons/social-block-v2/color-youtube-48.png' style='display:block;' height='24' width='24' class=''></a>
+                                                                                    <a href='https://youtu.be/9lcoR8jzkk8' target='_blank'><img src='http://cdn-images.mailchimp.com/icons/social-block-v2/color-youtube-48.png' style='display:block;' height='24' width='24' class=''></a>
                                                                                 </td>
                                                                             
                                                                             
