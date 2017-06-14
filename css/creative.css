@@ -223,7 +223,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 53%;
+        top: 50%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -233,7 +233,7 @@ header .header-content .header-content-inner p {
     header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: 5px;
-        max-width: 500px;
+        max-width: 100%;
     }
 
     header .header-content .header-content-inner p {
