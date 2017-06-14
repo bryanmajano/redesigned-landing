@@ -512,6 +512,8 @@ section#contact {
     height: 300px;
     min-height: 200px;
     position: relative;
+	bottom: 62px;
+	z-index: 0;
     
 }
 
