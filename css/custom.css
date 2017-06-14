@@ -505,3 +505,16 @@ section#contact {
 	}
 }
 
+/*  Banner Holder  ==================================================================== */
+
+.banner_holder{
+    width: 100%;
+    height: 300px;
+    min-height: 200px;
+    position: relative;
+    
+}
+
+.banner_holder img{
+    width: 100%;
+}
