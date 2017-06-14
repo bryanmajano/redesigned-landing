@@ -22,7 +22,8 @@ Start Navbar Styles
 }
 .navbar-default .top-logo {
     content:url("../img/logo_light_bg.png");
-    max-width: 200px;
+    max-width: 150px;
+    margin-top: 10px;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
 }
@@ -66,11 +67,12 @@ Navbar Large Styles
 */
 @media(min-width:768px) {
     .navbar-default {
-        /*border-color: rgba(255,255,255,0);*/
+        /*border-color: #ececec;*/
         /*border-width: 2px;*/
+        box-shadow: 1px 1px 3px rgba(0,0,0,.2);
     }
     .navbar-default .top-logo {
-        content:url("../img/logo_dark_bg.png");
+        content:url("../img/logo_light_bg.png");
         -webkit-transition: all .35s;
         -moz-transition: all .35s;
     }
@@ -85,6 +87,7 @@ Navbar Large Styles
     .navbar-default .nav>li>a:focus {
         padding-top:25px;
         padding-bottom:25px;
+        color:#000;
     }
 }
 
@@ -92,7 +95,7 @@ Navbar Large Styles
 Header Styles
 */
 header {
-    background-image: url(../img/room6.jpg);
+    background-image: url(../img/SleepHero_2.jpg);
 }
 
 .info-section h2 {
@@ -103,12 +106,12 @@ header {
 }
 
 .dark-bg {
-    background-color: rgba(0,0,0,.5);
-    color: white;
+    background-color: #fff;
+    color: #000;
 }
 
 header h1 {
-    color: rgba(255,255,255,0.9);
+    color: #000;
 }
 
 header .header-content .header-content-inner hr {
@@ -117,11 +120,12 @@ header .header-content .header-content-inner hr {
 }
 
 header .header-content .header-content-inner p {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
-    color: rgba(255,255,255,.9);
+    color: #000;
     font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    margin-left: 10px;
 }
 
 /*
@@ -129,7 +133,7 @@ Header Large Styles
 */
 @media(min-width:768px) {
     header .header-content .header-content-inner p {
-        font-size: 28px;
+        font-size: 20px;
     }
 }
 
@@ -222,6 +226,7 @@ Header Large Styles
 .inner-box-text p {
     line-height: 1.2;
     font-size: large;
+    text-align: left;
 }
 
 .inner-box-text hr {
@@ -232,7 +237,7 @@ Header Large Styles
 }
 
 .info-content {
-    color: rgb(240,95,64);
+    color: #0161b7;
 }
 
 @media(max-width:480px) {
@@ -342,8 +347,12 @@ Header Large Styles
 
 .btn-xl {
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-bottom: 10px;
+    margin-top: 40px;
+    border: #0161b7 2px solid;
+    display: none;
+    
 }
 
 .signup-box {
@@ -413,3 +422,24 @@ section#contact {
 .scroll-btn:hover {
     color:#d7d7d7
 }
+
+.video-container { 
+	position: relative; /* keeps the aspect ratio */ 
+	padding-bottom: 56.25%; /* fine tunes the video positioning */ 
+	overflow: hidden;
+	height: 0;
+	padding-top: 0px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+}
+
+
+
