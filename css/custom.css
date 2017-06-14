@@ -112,6 +112,7 @@ header {
 
 header h1 {
     color: #000;
+    font-size: 36px !important;
 }
 
 header .header-content .header-content-inner hr {
