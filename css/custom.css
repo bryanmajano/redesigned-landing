@@ -521,3 +521,15 @@ section#contact {
 .banner_holder img{
     width: 100%;
 }
+
+/*  Banner Holder  ==================================================================== */
+
+.header-text {
+	margin-top:90px; 
+}
+
+@media only screen and (max-width: 768px) {
+	.header-text {
+		margin-top: 0px;
+	}
+}
