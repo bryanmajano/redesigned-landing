@@ -559,23 +559,23 @@ section#contact {
 
 /* Social Media Buttons ============================================ */
 
-.fa .fa-facebook {
-	font-size: 20px;
-	padding: 0px 10px;
+.fa-facebook {
+	font-size: 20px !important;
+	padding: 0px 10px !important;
 }
 
-.fa .fa-twitter{
-	font-size: 20px;
-	padding: 0px 10px;
+.fa-twitter{
+	font-size: 20px !important;
+	padding: 0px 10px !important;
 }
 
-.fa .fa-instagram {
-	font-size: 20px;
-	padding: 0px 10px;
+.fa-instagram {
+	font-size: 20px !important;
+	padding: 0px 10px !important;
 }
 
-.fa .fa-linkedin {
-	font-size: 20px;
-	padding: 0px 10px;
+.fa-linkedin {
+	font-size: 20px !important;
+	padding: 0px 10px !important;
 }
 
